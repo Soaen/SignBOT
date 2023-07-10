@@ -14,7 +14,7 @@ import {
     ],
   });
 
-const TOKEN = "MTEyMzUxMzIzOTM0NzY3MTA2MA.G1BlRF.zrdXrhatdL-c9u3GMNZR5ZdZi5yVFDSYGP-0uQ";
+const TOKEN = "$$$$";
 
 
 
