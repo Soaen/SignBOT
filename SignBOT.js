@@ -17,12 +17,11 @@ import {
 const TOKEN = "$$$$";
 
 
-
 client.on("ready", async () => {
-    console.log("Bot en ligne !");
-   client.user.setPresence({
-  activities: [{ name: `vos signatures`, type: ActivityType.Watching,}],
-  status: 'idle',
+	console.log("Bot en ligne !");
+	client.user.setPresence({
+	activities: [{ name: `vos signatures`, type: ActivityType.Watching,}],
+  	status: 'idle',
 });
 
     let scheduledSignMessage = CronJob.schedule("00 00 10 * * 1-5", () => {
@@ -30,14 +29,14 @@ client.on("ready", async () => {
           const channel = guild.channels.cache.get("1123519967753674773");
             channel.send(
               `
-@everyone
+		@everyone
 
-https://tenor.com/view/lol-crazy-alerte-garrison-south-park-gif-14631935
+		https://tenor.com/view/lol-crazy-alerte-garrison-south-park-gif-14631935
 
 
-**Pensez à signer bande de cons !**
+		**Pensez à signer bande de cons !**
 
-https://sign.m2iformation.fr/signin`)
+		https://sign.m2iformation.fr/signin`)
             })
 
     scheduledSignMessage.start()
@@ -51,29 +50,18 @@ https://sign.m2iformation.fr/signin`)
       const channel = guild.channels.cache.get("1123519967753674773");
         channel.send(
           `
-@everyone
+		@everyone
 
-https://tenor.com/view/lol-crazy-alerte-garrison-south-park-gif-14631935
+		https://tenor.com/view/lol-crazy-alerte-garrison-south-park-gif-14631935
     
     
-**Bon les débilos là faut signer vous avez encore oubliez, faites un efforts un peu !**
-*Mathieu continue à faire chier Julian stp il adore ça*
+		**Bon les débilos là faut signer vous avez encore oubliez, faites un efforts un peu !**
+		*Mathieu continue à faire chier Julian stp il adore ça*
 
-https://sign.m2iformation.fr/signin`)
+		https://sign.m2iformation.fr/signin`)
         
-})
-    
+		})
 scheduledSecondSignMessage.start()
-
-
-
-
-
-
-
-
-
-
 	}
 )
 
